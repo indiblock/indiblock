@@ -22,7 +22,7 @@ Everything runs locally in your browser. No accounts, no tracking, no data leave
 3. Turn on **Developer mode**.
 4. Click **Load unpacked** and select the unzipped folder.
 
-### Firefox
+### Firefox (TODO set up working xpi)
 
 1. Download the `.xpi` file from the [Releases](https://github.com/indiblock/indiblock/releases) page.
 2. Open it in Firefox (double-click it, or drag it into a Firefox window).
