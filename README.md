@@ -24,8 +24,9 @@ Everything runs locally in your browser. No accounts, no tracking, no data leave
 
 ### Firefox
 
-Download the signed `.xpi` from the [Releases](../../releases) page, if one is attached, and open it in Firefox.
-Otherwise: open `about:debugging` > **This Firefox** > **Load Temporary Add-on** and select `manifest.json` (temporary add-ons are removed when Firefox restarts).
+1. Download the `.xpi` file from the [Releases](https://github.com/indiblock/indiblock/releases) page.
+2. Open it in Firefox (double-click it, or drag it into a Firefox window).
+3. Click **Add** when Firefox asks for permission.
 
 ## Customising
 
