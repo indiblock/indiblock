@@ -1,8 +1,13 @@
 (() => {
   const LISTS = globalThis.IB_LISTS;
 
-  // Any subreddit name containing "india", except Indiana / Indianapolis etc.
-  const INDIA_NAME = /india(?!na)/i;
+  // Subreddit-name patterns. "india" is matched except in Indiana / Indianapolis.
+  // Catches sneaky names like "BollyBlindsNGossip" or "IndianDankMemes".
+  const NAME_PATTERN =
+    /india(?!na)|bolly|tollywood|kollywood|mollywood|hindi|tamil|telugu|malayalam|kannada|bhojpuri/i;
+
+  // Title pattern: any word starting with "bolly", plus the regional "-wood" industries.
+  const TITLE_PATTERN = /\bbolly\w*|\b[tkm]ollywood\b/i;
 
   let blockedSubs = new Set();
   let keywordRegex = null;
@@ -29,7 +34,7 @@
 
   const isBlockedSub = (name) => {
     const n = normSub(name);
-    return !paused && !!n && (blockedSubs.has(n) || INDIA_NAME.test(n));
+    return !paused && !!n && (blockedSubs.has(n) || NAME_PATTERN.test(n));
   };
   const isBlockedTitle = (t) => !paused && !!t && !!keywordRegex && keywordRegex.test(t);
 
