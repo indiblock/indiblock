@@ -6,11 +6,11 @@ globalThis.IB_LISTS = {
     // country / general
     "india", "indiaspeaks", "indianfood", "indianteenagers", "unitedstatesofindia",
     // cities & regions
-    "mumbai", "delhi", "newdelhi", "bangalore", "bengaluru", "kolkata", "chennai",
+    "mumbai", "delhi", "coconaad", "patahaiaajkyahua", "jkreacts", "newdelhi", "bangalore", "bengaluru", "kolkata", "chennai",
     "hyderabad", "pune", "ahmedabad", "jaipur", "lucknow", "goa", "kerala",
     "punjab", "gujarat", "maharashtra", "tamilnadu", "karnataka",
     // culture & language
-    "bollywood", "bollywoodmemes", "tollywood", "kollywood", "desi", "abcdesis",
+    "bollywood", "bollywoodmemes", "frugal_ind", "bollyblindsngossip", "tollywood", "kollywood", "desi", "abcdesis",
     "hindi", "tamil", "telugu", "malayalam", "kannada", "bengali", "marathi"
   ],
 
