@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 320px; font-family: system-ui, sans-serif; padding: 12px; font-size: 14px; color: #222; }
+  h3 { margin: 0 0 4px; }
+  .count { color: #555; margin-bottom: 8px; min-height: 18px; }
+  label.row { display: flex; align-items: center; gap: 8px; margin: 8px 0; font-weight: 600; }
+  label.field { display: block; margin-top: 10px; font-weight: 600; }
+  small { color: #666; font-weight: 400; }
+  textarea { width: 100%; height: 64px; box-sizing: border-box; margin-top: 4px; }
+  button { margin-top: 12px; padding: 8px 16px; cursor: pointer; }
+  #status { margin-left: 8px; color: #2a7; }
+</style>
+</head>
+<body>
+  <h3>IndiBlock</h3>
+  <div class="count" id="count"></div>
+
+  <label class="row"><input type="checkbox" id="paused"> Pause filtering</label>
+
+  <p><small>Built-in India-related communities and keywords are always on while filtering is active. Add anything extra below.</small></p>
+
+  <label class="field">Extra subreddits <small>(one per line, e.g. r/example)</small></label>
+  <textarea id="subs"></textarea>
+
+  <label class="field">Extra title keywords <small>(one per line)</small></label>
+  <textarea id="kws"></textarea>
+
+  <button id="save">Save</button><span id="status"></span>
+  <script src="popup.js"></script>
+</body>
+</html>
